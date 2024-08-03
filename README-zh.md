@@ -1,14 +1,14 @@
-# Customized Controller Display Server for OBS
+# 给OBS用的一个展示手柄操作的web程序
 
-[简体中文](https://github.com/ForeverThawn/Customized-Controller-Display-Server/blob/main/README-zh.md)
+[English](https://github.com/ForeverThawn/Customized-Controller-Display-Server/blob/main/README.md)
 
-A simple webapp that visualizes the input triggers and axis of connected controllers using the JavaScript Gamepad API.
+此项目使用JavaScript Gamepad API制作，目的是弄一个自己用OBS录视频方便展示欧卡2/美卡手柄操作的overlay
 
-*This repository is forked from* [ControllerInputVisualizer](https://github.com/AnonymerNiklasistanonym/ControllerInputVisualizer)
+*参考项目：* [ControllerInputVisualizer](https://github.com/AnonymerNiklasistanonym/ControllerInputVisualizer)
 
-PS: This is a version using my own settings, mainly working for ETS2 and ATS.
+PS: 这个东西是完全自用，所以没有适配，当然大家可以用来学习
 
-## Links of features that are used by this project
+## 项目特性相关链接
 
 - `canvas`
   - [game loop (sitepoint)](https://www.sitepoint.com/quick-tip-game-loop-in-javascript/)
@@ -28,8 +28,8 @@ PS: This is a version using my own settings, mainly working for ETS2 and ATS.
 - FileReader API
   - [FileReader API (mdn)](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)
 
-## How to run
+## 使用
 
-Open the [`index.html`](index.html) file with your browser.
+浏览器打开 [`index.html`](index.html)；
 
-Or simply run the command `node index.js` as a web server.
+或者直接命令行运行 `node index.js`。
