@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Character encoding -->
+    <meta charset="utf-8">
+    <!-- Website information -->
+    <title>ControllerInputVisualizer</title>
+    <!-- Properties to support any screen size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicons -->
+    <link rel="icon" href="favicons/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/favicon_192.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="favicons/favicon_256.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico" />
+    <!-- Web app manifest -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+
+<body style="overflow-y: hidden;">
+
+    <!-- The canvas for rendering the controller inputs -->
+    <canvas id="main"></canvas>
+
+    <!-- Element for all general options -->
+    <div id="options">
+        <input id="html-input-set-background-color" type="color">
+        <label for="html-input-set-background-color">
+            Select custom background color
+        </label>
+        <br>
+        <input id="html-input-toggle-mask" type="checkbox">
+        <label for="html-input-toggle-mask">
+            Render alpha mask (for chroma keying)
+        </label>
+        <br>
+        <input id="html-input-toggle-debug" type="checkbox">
+        <label for="html-input-toggle-debug">
+            Debug mode
+        </label>
+        <br>
+        <input id="html-input-toggle-hide-vertical-scrollbar" type="checkbox">
+        <label for="html-input-toggle-hide-vertical-scrollbar">
+            Hide vertical scrollbar
+        </label>
+        <br>
+        <input id="html-input-trigger-reset" type="button" value="Reset all options">
+        <br>
+        <input id="html-input-trigger-screenshot" type="button" value="Save screenshot">
+    </div>
+
+    <!-- Element for all controller specific options -->
+    <div id="controller-options">
+        <ul id="controller-options-list"></ul>
+    </div>
+
+    <!-- Scripts -->
+    <script src="user_profiles.js"></script>
+    <script src="visualization_profiles.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
